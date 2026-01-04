@@ -1,6 +1,6 @@
-# AniMagnet
+# AnimeScraper
 
-AniMagnet is a lightweight command-line tool for fetching anime-related data and magnet links. It allows users to search for anime entries, display the results, and operate on magnet links for downloading content.
+AnimeScraper is a lightweight command-line tool for fetching anime-related data and magnet links. It allows users to search for anime entries, display the results, and operate on magnet links for downloading content.
 
 ## Features
 - **Search for Anime**: Fetch anime entries by providing the anime name.
