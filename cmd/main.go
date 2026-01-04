@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/AnimeScraper/pkg"
 	"github.com/gocolly/colly"
-	"github.com/nyaaScrapper/pkg"
 )
 
 func main() {

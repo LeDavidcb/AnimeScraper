@@ -1,4 +1,4 @@
-module github.com/nyaaScrapper
+module github.com/AnimeScraper
 
 go 1.25.5
 
