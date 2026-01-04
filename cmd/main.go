@@ -16,7 +16,7 @@ func main() {
 	var name string = *nameflag
 
 	if name == "" {
-		fmt.Println(`No anime name was provided, provide the anime name by using the flag name: --name=<url>`)
+		fmt.Println("No anime name was provided. Use the flag: --name=<url>")
 		return
 	}
 
@@ -25,17 +25,17 @@ func main() {
 
 	entries, err := pkg.ReturnEntries(c, fmt.Sprintf("https://nyaa.si/?f=0&c=0_0&q=%v", name))
 	if err != nil {
-		fmt.Println("Error at scraping entities, more info: ", err)
+		fmt.Println("Error scraping entities. Details:", err)
 		return
 	}
 
-	fmt.Println("Found", len(entries), "Animes")
+	fmt.Println("Found", len(entries), "anime entries")
 	fmt.Println("Do you want to display them? [y/n]")
 
 	var response string
 	_, err = fmt.Scan(&response)
 	if err != nil {
-		fmt.Println("Error while getting response:", err)
+		fmt.Println("Error getting response:", err)
 	}
 	switch strings.Trim(strings.ToLower(response), " ") {
 	case "y":
@@ -46,10 +46,10 @@ func main() {
 		fmt.Println("Not a valid response")
 	}
 
-	fmt.Println("Do you want to coppy all magnets? [y/n]")
+	fmt.Println("Do you want to copy all magnets? [y/n]")
 	_, err = fmt.Scan(&response)
 	if err != nil {
-		fmt.Println("Error while getting response:", err)
+		fmt.Println("Error getting response:", err)
 	}
 	switch strings.Trim(strings.ToLower(response), " ") {
 	case "y":
